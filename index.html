@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/png" href="./favicon.png">
+        <link rel="apple-touch-icon" href="./favicon.png">
+        <meta name="theme-color" content="#0F172A">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>THE GRAND TABLE | Premium Restaurant &amp; Fine Dining (Demo)</title>
+        <meta name="description" content="THE GRAND TABLE — Good food. Beautiful moments. A premium restaurant website demo by ALFAIZ Web Agency.">
+        <link rel="canonical" href="https://www.example.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="THE GRAND TABLE — Good Food. Beautiful Moments.">
+        <meta property="og:description" content="Exceptional flavors, thoughtfully prepared dishes and moments worth sharing. Demo by ALFAIZ Web Agency.">
+        <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=70">
+        <meta property="og:url" content="https://www.example.com/">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="THE GRAND TABLE — Premium Restaurant Demo">
+        <meta name="twitter:description" content="Good food. Beautiful moments.">
+        <meta name="theme-color" content="#183B32">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"THE GRAND TABLE (Demo)","description":"Demo restaurant website. All business details are placeholders.","servesCuisine":["International","Pakistani"],"priceRange":"PKR (demo)","url":"https://www.example.com/"}
+        </script>
+    </head>
+    <body class="is-loading">
+        <a class="skip" href="#main">Skip to content</a>
+        <header class="nav" id="nav">
+            <div class="container nav__inner">
+                <a href="#home" class="logo" aria-label="THE GRAND TABLE home">
+                    <span class="logo__the">The</span>
+                    <span class="logo__main">Grand Table</span>
+                </a>
+                <nav class="nav__links" id="navLinks" aria-label="Primary">
+                    <a href="#home">Home</a>
+                    <a href="#story">Our Story</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#reserve" class="btn btn--accent nav__cta-mobile">Reserve a Table</a>
+                </nav>
+                <a href="#reserve" class="btn btn--accent nav__cta">Reserve a Table</a>
+                <button
+                    class="burger"
+                    id="burger"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <main id="main">
+            <section class="hero" id="home">
+                <img
+                    class="hero__img"
+                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=70"
+                    alt="Warmly lit modern restaurant dining room"
+                    fetchpriority="high"
+                >
+                <div class="hero__overlay"></div>
+                <div class="container hero__content">
+                    <p class="eyebrow eyebrow--light hero__label">Fine Dining · Demo Location</p>
+                    <h1 class="hero__title">
+                        <span class="line">
+                            <span>An Experience</span>
+                        </span>
+                        <span class="line">
+                            <span>
+                                Beyond the
+                                <em>Plate.</em>
+                            </span>
+                        </span>
+                    </h1>
+                    <p class="hero__text">Discover exceptional flavors, thoughtfully prepared dishes and moments worth sharing.</p>
+                    <div class="hero__btns">
+                        <a href="#menu" class="btn btn--accent">Explore Our Menu</a>
+                        <a href="#reserve" class="btn btn--ghost">Reserve a Table</a>
+                    </div>
+                </div>
+                <a href="#story" class="scroll-ind" aria-label="Scroll down">
+                    <span></span>
+                </a>
+            </section>
+            <section class="section intro" id="story">
+                <div class="container split">
+                    <div class="split__media reveal">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=70" alt="Chef plating a dish in a professional kitchen">
+                        <span class="split__badge">
+                            Good food.
+                            <br>
+                            Beautiful moments.
+                        </span>
+                    </div>
+                    <div class="split__text reveal">
+                        <p class="eyebrow">Our Philosophy</p>
+                        <h2>Made with passion. Served with love.</h2>
+                        <p>At The Grand Table, every plate begins with respect for the ingredient and ends with a moment worth remembering. Our kitchen blends familiar comfort with refined technique, in a room designed for conversation and celebration.</p>
+                        <p>This is demo copy, written to show how a restaurant's story can be told with warmth and confidence.</p>
+                        <a href="#experience" class="btn btn--dark">Discover Our Story</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--sand" id="menu">
+                <div class="container">
+                    <div class="head reveal">
+                        <p class="eyebrow">The Menu</p>
+                        <h2>Our Signature Dishes</h2>
+                    </div>
+                    <div class="filters reveal" role="group" aria-label="Menu categories">
+                        <button class="chip is-active" data-filter="all">All</button>
+                        <button class="chip" data-filter="Starters">Starters</button>
+                        <button class="chip" data-filter="Main Course">Main Course</button>
+                        <button class="chip" data-filter="Desserts">Desserts</button>
+                        <button class="chip" data-filter="Drinks">Drinks</button>
+                    </div>
+                    <div class="menu-grid" id="menuGrid">
+                        <article class="dish" data-cat="Starters">
+                            <div class="dish__img">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=70" alt="Grilled chicken with herbs">
+                                <span class="badge">Starters</span>
+                            </div>
+                            <div class="dish__body">
+                                <h3>Grilled Chicken</h3>
+                                <p>Herb-marinated chicken, flame grilled and finished with lemon butter.</p>
+                                <div class="dish__foot">
+                                    <strong>PKR 1,450</strong>
+                                    <button class="link" data-details>View Details</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dish" data-cat="Main Course">
+                            <div class="dish__img">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=70" alt="Signature beef burger with fries">
+                                <span class="badge">Main Course</span>
+                            </div>
+                            <div class="dish__body">
+                                <h3>Signature Beef Burger</h3>
+                                <p>Juicy beef patty, aged cheddar, house sauce and a toasted brioche bun.</p>
+                                <div class="dish__foot">
+                                    <strong>PKR 1,650</strong>
+                                    <button class="link" data-details>View Details</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dish" data-cat="Main Course">
+                            <div class="dish__img">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=70" alt="Creamy alfredo pasta">
+                                <span class="badge">Main Course</span>
+                            </div>
+                            <div class="dish__body">
+                                <h3>Creamy Alfredo Pasta</h3>
+                                <p>Fettuccine in a silky parmesan cream sauce with garlic and fresh parsley.</p>
+                                <div class="dish__foot">
+                                    <strong>PKR 1,550</strong>
+                                    <button class="link" data-details>View Details</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dish" data-cat="Main Course">
+                            <div class="dish__img">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=70" alt="Fragrant special biryani">
+                                <span class="badge">Main Course</span>
+                            </div>
+                            <div class="dish__body">
+                                <h3>Special Biryani</h3>
+                                <p>Slow-cooked basmati layered with spiced meat, saffron and fried onions.</p>
+                                <div class="dish__foot">
+                                    <strong>PKR 1,350</strong>
+                                    <button class="link" data-details>View Details</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dish" data-cat="Starters">
+                            <div class="dish__img">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=70" alt="Gourmet pizza fresh from the oven">
+                                <span class="badge">Starters</span>
+                            </div>
+                            <div class="dish__body">
+                                <h3>Gourmet Pizza</h3>
+                                <p>Hand-stretched dough, fresh mozzarella, basil and a slow-simmered tomato base. Made for sharing.</p>
+                                <div class="dish__foot">
+                                    <strong>PKR 1,800</strong>
+                                    <button class="link" data-details>View Details</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dish" data-cat="Desserts">
+                            <div class="dish__img">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=70" alt="Chocolate lava cake">
+                                <span class="badge">Desserts</span>
+                            </div>
+                            <div class="dish__body">
+                                <h3>Chocolate Lava Cake</h3>
+                                <p>Warm dark chocolate cake with a molten centre, served with vanilla cream.</p>
+                                <div class="dish__foot">
+                                    <strong>PKR 950</strong>
+                                    <button class="link" data-details>View Details</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="empty" id="menuEmpty" hidden>Our drinks list is being prepared. (Sample content for this demo.)</p>
+                </div>
+            </section>
+            <dialog class="modal" id="dishModal" aria-labelledby="dmTitle">
+                <button class="modal__x" data-close aria-label="Close">&times;</button>
+                <img id="dmImg" alt="">
+                <div class="modal__body">
+                    <span class="badge badge--static" id="dmCat"></span>
+                    <h3 id="dmTitle"></h3>
+                    <p id="dmDesc"></p>
+                    <strong id="dmPrice"></strong>
+                    <a href="#reserve" class="btn btn--accent" data-close>Reserve a Table</a>
+                </div>
+            </dialog>
+            <section class="feature parallax" id="experience">
+                <img
+                    class="parallax__img"
+                    loading="lazy"
+                    src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1920&q=70"
+                    alt="Elegant restaurant interior with warm lighting"
+                >
+                <div class="hero__overlay"></div>
+                <div class="container feature__content reveal">
+                    <p class="eyebrow eyebrow--light">The Experience</p>
+                    <h2>More than just a meal.</h2>
+                    <p>From the first welcome to the last bite of dessert, every detail is considered: the light, the pace, the plate and the people who care for your table.</p>
+                    <a href="#reserve" class="btn btn--accent">Book Your Evening</a>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="head reveal">
+                        <p class="eyebrow">Why The Grand Table</p>
+                        <h2>Crafted around you</h2>
+                    </div>
+                    <div class="why">
+                        <article class="why__card reveal">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 21c-5 0-8-3.5-8-8 5 0 8 2 8 8zM12 21c0-6 3-8 8-8 0 4.5-3 8-8 8zM12 12V3"/>
+                            </svg>
+                            <h3>Fresh Ingredients</h3>
+                            <p>Seasonal produce, chosen with care and prepared daily.</p>
+                        </article>
+                        <article class="why__card reveal">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 14a4 4 0 1 1 2-7 4 4 0 0 1 6 0 4 4 0 1 1 2 7v7H7zM7 18h10"/>
+                            </svg>
+                            <h3>Expert Chefs</h3>
+                            <p>A passionate kitchen team focused on flavor and detail.</p>
+                        </article>
+                        <article class="why__card reveal">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3v4M8 21h8M12 7c-3 0-5 2-5 5h10c0-3-2-5-5-5zM12 12v9"/>
+                            </svg>
+                            <h3>Beautiful Ambience</h3>
+                            <p>Warm lighting and comfortable spaces for every occasion.</p>
+                        </article>
+                        <article class="why__card reveal">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/>
+                            </svg>
+                            <h3>Memorable Dining</h3>
+                            <p>Thoughtful service that turns a meal into a story.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--cream" id="gallery">
+                <div class="container">
+                    <div class="head reveal">
+                        <p class="eyebrow">Gallery</p>
+                        <h2>A taste of the atmosphere</h2>
+                    </div>
+                    <div class="gallery" id="gallery-grid">
+                        <button class="g g--tall reveal" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=75">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=65" alt="Restaurant interior">
+                        </button>
+                        <button class="g reveal" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=75">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=65" alt="Beautifully plated signature dish">
+                        </button>
+                        <button class="g g--wide reveal" data-full="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1600&q=75">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=65" alt="Chef preparing food">
+                        </button>
+                        <button class="g reveal" data-full="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=75">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=65" alt="Dining atmosphere">
+                        </button>
+                        <button class="g g--tall reveal" data-full="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1600&q=75">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=65" alt="Dessert presentation">
+                        </button>
+                        <button class="g reveal" data-full="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=75">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=65" alt="Fresh food presentation">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="offer parallax">
+                <img
+                    class="parallax__img"
+                    loading="lazy"
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1920&q=70"
+                    alt="Fresh colourful dishes on a table"
+                >
+                <div class="offer__shade"></div>
+                <div class="container reveal">
+                    <p class="eyebrow eyebrow--light">Special Offer</p>
+                    <h2>Make every moment delicious.</h2>
+                    <p>Discover something special on your next visit.</p>
+                    <a href="#menu" class="btn btn--accent">Explore Menu</a>
+                </div>
+            </section>
+            <section class="section reserve" id="reserve">
+                <div class="container reserve__grid">
+                    <div class="reserve__media reveal">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=70" alt="Steak dinner served at a candlelit table">
+                        <div class="reserve__note">
+                            <p class="eyebrow eyebrow--light">Reservations</p>
+                            <h2>Reserve your table</h2>
+                        </div>
+                    </div>
+                    <form class="form reveal" id="reserveForm" novalidate>
+                        <h3>Book an evening</h3>
+                        <div class="row">
+                            <label>
+                                Name
+                                <input
+                                    name="name"
+                                    type="text"
+                                    autocomplete="name"
+                                    required
+                                >
+                                <small></small>
+                            </label>
+                            <label>
+                                Email
+                                <input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    required
+                                >
+                                <small></small>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label>
+                                Phone
+                                <input
+                                    name="phone"
+                                    type="tel"
+                                    autocomplete="tel"
+                                    required
+                                >
+                                <small></small>
+                            </label>
+                            <label>
+                                Guests
+                                <select name="guests" required>
+                                    <option value="">Select</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7+</option>
+                                </select>
+                                <small></small>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label>
+                                Date
+                                <input
+                                    name="date"
+                                    id="dateInput"
+                                    type="date"
+                                    required
+                                >
+                                <small></small>
+                            </label>
+                            <label>
+                                Time
+                                <select name="time" required>
+                                    <option value="">Select</option>
+                                    <option>12:00 PM</option>
+                                    <option>1:30 PM</option>
+                                    <option>7:00 PM</option>
+                                    <option>8:30 PM</option>
+                                    <option>10:00 PM</option>
+                                </select>
+                                <small></small>
+                            </label>
+                        </div>
+                        <label>
+                            Special request
+                            <textarea name="note" rows="3" maxlength="300"></textarea>
+                        </label>
+                        <button class="btn btn--accent" type="submit">Request Reservation</button>
+                        <p
+                            class="form__ok"
+                            id="reserveOk"
+                            role="status"
+                            hidden
+                        >Thank you! This is a demo submission only. No real booking has been made.</p>
+                    </form>
+                </div>
+            </section>
+            <section class="section section--green testi" aria-label="Sample testimonials">
+                <div class="container">
+                    <div class="head reveal">
+                        <p class="eyebrow eyebrow--light">Guest Words</p>
+                        <h2>What guests could say</h2>
+                        <p class="sample">Sample content for demonstration. Not real customer reviews.</p>
+                    </div>
+                    <div class="slider reveal" id="slider">
+                        <button class="slider__btn" data-prev aria-label="Previous testimonial">&#8249;</button>
+                        <div class="slider__view">
+                            <div class="slider__track">
+                                <blockquote class="slide">
+                                    <div class="stars" aria-label="5 stars">★★★★★</div>
+                                    <p>“A beautiful evening from start to finish. The atmosphere was warm and every dish felt special.”</p>
+                                    <cite>Guest Name · Sample</cite>
+                                </blockquote>
+                                <blockquote class="slide">
+                                    <div class="stars" aria-label="5 stars">★★★★★</div>
+                                    <p>“Perfect for a family celebration. Thoughtful service and a menu with something for everyone.”</p>
+                                    <cite>Guest Name · Sample</cite>
+                                </blockquote>
+                                <blockquote class="slide">
+                                    <div class="stars" aria-label="5 stars">★★★★★</div>
+                                    <p>“The dessert alone is worth the visit. We are already planning our next table.”</p>
+                                    <cite>Guest Name · Sample</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <button class="slider__btn" data-next aria-label="Next testimonial">&#8250;</button>
+                    </div>
+                    <div class="dots" id="dots"></div>
+                </div>
+            </section>
+            <section class="section" id="contact">
+                <div class="container contact">
+                    <div class="reveal">
+                        <p class="eyebrow">Visit Us</p>
+                        <h2>Location &amp; contact</h2>
+                        <ul class="info">
+                            <li>
+                                <b>Address</b>
+                                <span>[Restaurant address placeholder]</span>
+                            </li>
+                            <li>
+                                <b>Phone</b>
+                                <span>[Phone number placeholder]</span>
+                            </li>
+                            <li>
+                                <b>Email</b>
+                                <span>[Email placeholder]</span>
+                            </li>
+                            <li>
+                                <b>Opening hours</b>
+                                <span>[Mon–Sun hours placeholder]</span>
+                            </li>
+                            <li>
+                                <b>Social</b>
+                                <span>[Instagram] · [Facebook] · [TikTok]</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map reveal" role="img" aria-label="Map placeholder">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 22s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/>
+                            <circle cx="12" cy="10" r="2.5"/>
+                        </svg>
+                        <p>
+                            Map placeholder
+                            <br>
+                            <small>Embed your real map here</small>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer__grid">
+                <div>
+                    <a href="#home" class="logo logo--light">
+                        <span class="logo__the">The</span>
+                        <span class="logo__main">Grand Table</span>
+                    </a>
+                    <p>Good food. Beautiful moments. A demo restaurant brand created to showcase premium web design.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <a href="#story">Our Story</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+                <div>
+                    <h4>Menu</h4>
+                    <a href="#menu" data-jump="Starters">Starters</a>
+                    <a href="#menu" data-jump="Main Course">Main Course</a>
+                    <a href="#menu" data-jump="Desserts">Desserts</a>
+                    <a href="#reserve">Reservations</a>
+                </div>
+                <div>
+                    <h4>Newsletter</h4>
+                    <form id="newsForm" novalidate>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your email"
+                            aria-label="Email for newsletter"
+                        >
+                        <button class="btn btn--accent" type="submit">Subscribe</button>
+                        <small id="newsMsg" role="status"></small>
+                    </form>
+                    <p class="muted">[Phone] · [Email] · [Social]</p>
+                </div>
+            </div>
+            <div class="container footer__bar">
+                <span>
+                    &copy;
+                    <span id="yr"></span> THE GRAND TABLE</span>
+                <span>Designed &amp; Developed by ALFAIZ Web Agency</span>
+            </div>
+        </footer>
+        <button class="totop" id="toTop" aria-label="Back to top">&uarr;</button>
+        <div
+            class="lightbox"
+            id="lightbox"
+            hidden
+            role="dialog"
+            aria-modal="true"
+            aria-label="Image viewer"
+        >
+            <button class="lb__x" data-close aria-label="Close">&times;</button>
+            <button class="lb__n lb__n--p" data-prev aria-label="Previous image">&#8249;</button>
+            <img alt="">
+            <button class="lb__n lb__n--n" data-next aria-label="Next image">&#8250;</button>
+        </div>
+        <script src="js/main.js" defer></script>
+        <script src="js/menu.js" defer></script>
+        <script src="js/slider.js" defer></script>
+        <script src="js/gallery.js" defer></script>
+    </body>
+</html>
